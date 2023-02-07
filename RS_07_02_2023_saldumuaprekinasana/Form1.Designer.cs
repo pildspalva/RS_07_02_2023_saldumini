@@ -28,25 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.serenade = new System.Windows.Forms.CheckBox();
+            this.selga = new System.Windows.Forms.CheckBox();
+            this.jurakonfekte = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.label1.ForeColor = System.Drawing.SystemColors.Menu;
-            this.label1.Location = new System.Drawing.Point(53, 77);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Saldumu cena: 9.88E/kg,";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -105,33 +95,76 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Cena:";
             // 
+            // serenade
+            // 
+            this.serenade.AutoSize = true;
+            this.serenade.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.serenade.ForeColor = System.Drawing.SystemColors.Menu;
+            this.serenade.Location = new System.Drawing.Point(56, 57);
+            this.serenade.Name = "serenade";
+            this.serenade.Size = new System.Drawing.Size(113, 17);
+            this.serenade.TabIndex = 6;
+            this.serenade.Text = "Serenade 6.55/kg";
+            this.serenade.UseVisualStyleBackColor = false;
+            this.serenade.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // selga
+            // 
+            this.selga.AutoSize = true;
+            this.selga.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.selga.ForeColor = System.Drawing.SystemColors.Menu;
+            this.selga.Location = new System.Drawing.Point(56, 34);
+            this.selga.Name = "selga";
+            this.selga.Size = new System.Drawing.Size(94, 17);
+            this.selga.TabIndex = 8;
+            this.selga.Text = "Selga 7.64/kg";
+            this.selga.UseVisualStyleBackColor = false;
+            this.selga.CheckedChanged += new System.EventHandler(this.selga_CheckedChanged);
+            // 
+            // jurakonfekte
+            // 
+            this.jurakonfekte.AutoSize = true;
+            this.jurakonfekte.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.jurakonfekte.ForeColor = System.Drawing.SystemColors.Menu;
+            this.jurakonfekte.Location = new System.Drawing.Point(56, 80);
+            this.jurakonfekte.Name = "jurakonfekte";
+            this.jurakonfekte.Size = new System.Drawing.Size(130, 17);
+            this.jurakonfekte.TabIndex = 9;
+            this.jurakonfekte.Text = "JuraKonfekte 3.23/kg";
+            this.jurakonfekte.UseVisualStyleBackColor = false;
+            this.jurakonfekte.CheckedChanged += new System.EventHandler(this.jurakonfekte_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::RS_07_02_2023_saldumuaprekinasana.Properties.Resources.marguerite_729510__340;
             this.ClientSize = new System.Drawing.Size(517, 348);
+            this.Controls.Add(this.jurakonfekte);
+            this.Controls.Add(this.selga);
+            this.Controls.Add(this.serenade);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox serenade;
+        private System.Windows.Forms.CheckBox selga;
+        private System.Windows.Forms.CheckBox jurakonfekte;
     }
 }
 

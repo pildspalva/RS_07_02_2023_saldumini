@@ -19,11 +19,33 @@ namespace RS_07_02_2023_saldumuaprekinasana
 
         public void aprekinasana()
         {
-            double naudas_daudzums = Convert.ToDouble(textBox1.Text);
-            double nauda = naudas_daudzums;
-            double cena = 9.88;
-            double kilogramu_daudzums = naudas_daudzums / cena;
-            label3.Text = kilogramu_daudzums.ToString();
+            if (serenade.Checked == true) 
+            {
+                double naudas_daudzums = Convert.ToDouble(textBox1.Text);
+                double nauda = naudas_daudzums;
+                double cena = 6.55;
+                double kilogramu_daudzums = naudas_daudzums / cena;
+                label3.Text = kilogramu_daudzums.ToString();
+            }
+
+            else if (selga.Checked == true)
+            {
+                double naudas_daudzums = Convert.ToDouble(textBox1.Text);
+                double nauda = naudas_daudzums;
+                double cena = 7.64;
+                double kilogramu_daudzums = naudas_daudzums / cena;
+                label3.Text = kilogramu_daudzums.ToString();
+            }
+
+            else if (jurakonfekte.Checked == true)
+            {
+                double naudas_daudzums = Convert.ToDouble(textBox1.Text);
+                double nauda = naudas_daudzums;
+                double cena = 3.23;
+                double kilogramu_daudzums = naudas_daudzums / cena;
+                label3.Text = kilogramu_daudzums.ToString();
+            }
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -47,6 +69,26 @@ namespace RS_07_02_2023_saldumuaprekinasana
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void selga_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void jurakonfekte_CheckedChanged(object sender, EventArgs e)
         {
 
         }
