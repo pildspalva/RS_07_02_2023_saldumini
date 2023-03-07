@@ -63,9 +63,29 @@ namespace RS_07_02_2023_saldumuaprekinasana.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _8b8c_63c0364177d4e_scaled {
+            get {
+                object obj = ResourceManager.GetObject("8b8c-63c0364177d4e-scaled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap marguerite_729510__340 {
             get {
                 object obj = ResourceManager.GetObject("marguerite-729510__340", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stropie {
+            get {
+                object obj = ResourceManager.GetObject("stropie", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

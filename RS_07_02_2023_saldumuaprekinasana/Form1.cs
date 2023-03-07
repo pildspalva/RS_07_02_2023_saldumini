@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,8 +18,10 @@ namespace RS_07_02_2023_saldumuaprekinasana
             InitializeComponent();
         }
 
+       
         public void aprekinasana()
         {
+        
             if (serenade.Checked == true) 
             {
                 double naudas_daudzums = Convert.ToDouble(textBox1.Text);
@@ -47,6 +50,17 @@ namespace RS_07_02_2023_saldumuaprekinasana
             }
 
         }
+  public void ceks()
+        {
+            string path = @"Z:\2022programmesana\RS_07_02_2023_saldumuaprekinasana\ceks.txt";
+            if (!File.Exists(path))
+            {
+                using (StreamWriter sw = File.CreateText(path))
+                {
+                    sw.WriteLine("Summa apmaksai: ");
+                }
+            }
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -61,6 +75,7 @@ namespace RS_07_02_2023_saldumuaprekinasana
         private void button1_Click(object sender, EventArgs e)
         {
             aprekinasana();
+            ceks();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
