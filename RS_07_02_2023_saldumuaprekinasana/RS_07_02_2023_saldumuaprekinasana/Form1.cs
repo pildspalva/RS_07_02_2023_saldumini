@@ -26,7 +26,7 @@ namespace RS_07_02_2023_saldumuaprekinasana
         {
             string vards = this.varda_tbox.Text;
             string failanosaukums = vards + "_" + DateTime.Now.ToString("dd_MM_yyyy") + "_ceks.txt";
-            string ceka_izdrukas_laiks = DateTime.Now.ToString("dd.MM.yyyy HH.MM.ss");
+            string ceka_izdrukas_laiks = DateTime.Now.ToString("dd.MM.yyyy HH.mm.ss");
             string naudas_daudzums = Convert.ToString(naudas_daudzums_tbox.Text);
             string kg_daudzums = Convert.ToString(kg_daudzums_tbox.Text);
 

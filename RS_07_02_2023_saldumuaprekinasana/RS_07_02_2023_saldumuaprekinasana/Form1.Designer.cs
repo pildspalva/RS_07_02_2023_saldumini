@@ -82,7 +82,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(93, 23);
             this.button1.TabIndex = 4;
-            this.button1.Text = "APREKINAT";
+            this.button1.Text = "Veikt aprēķinus";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -91,11 +91,11 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label4.Location = new System.Drawing.Point(125, 285);
+            this.label4.Location = new System.Drawing.Point(73, 285);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 13);
+            this.label4.Size = new System.Drawing.Size(179, 13);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Konfeksu daudzums (kg):";
+            this.label4.Text = "Pieejamais konfekšu daudzums (kg):";
             // 
             // serenade
             // 
@@ -106,7 +106,7 @@
             this.serenade.Name = "serenade";
             this.serenade.Size = new System.Drawing.Size(113, 17);
             this.serenade.TabIndex = 6;
-            this.serenade.Text = "Serenade 6.55/kg";
+            this.serenade.Text = "Serenāde 6.55/kg";
             this.serenade.UseVisualStyleBackColor = false;
             this.serenade.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -158,11 +158,11 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(99, 196);
+            this.label1.Location = new System.Drawing.Point(96, 192);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 13);
+            this.label1.Size = new System.Drawing.Size(104, 13);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Ievadiet jusu vardu:";
+            this.label1.Text = "Ievadiet savu vārdu:";
             // 
             // Form1
             // 
