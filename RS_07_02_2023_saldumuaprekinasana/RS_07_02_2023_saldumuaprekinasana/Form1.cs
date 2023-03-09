@@ -54,7 +54,12 @@ namespace RS_07_02_2023_saldumuaprekinasana
             {
                 MessageBox.Show("Jus neesat atzimejis nevienu lodzinu");
             }
-            else if (jurakonfekte.Checked == false && selga.Checked == false && serenade.Checked == true)
+   
+                else if (Convert.ToInt32(naudas_daudzums_tbox.Text) < 0)
+            {
+                MessageBox.Show("Naudas daudzums nevar but negativs");
+            }
+                else if (jurakonfekte.Checked == false && selga.Checked == false && serenade.Checked == true)
             {
                 cena = 6.55;
                 aprekinasana(cena);
